@@ -13,6 +13,7 @@
     <appendix>(Control+W to Command_L+W)</appendix>
     <appendix>(Control+Q to Command_L+Q)</appendix>
     <appendix>(Control+A to Command_L+A)</appendix>
+    <appendix>(Control+R to Command_L+R)</appendix>
     <appendix>(Change Home to Control+A)</appendix>
     <appendix>(Change End to Control+E)</appendix>
     <appendix>Swap @ and double-quote(")</appendix>
@@ -32,6 +33,7 @@
     <autogen>__KeyToKey__ KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::A, VK_CONTROL, KeyCode::A, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
     <!-- Fix Home and End keys -->
     <autogen>__KeyToKey__ FROMKEYCODE_HOME, VK_COMMAND, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ FROMKEYCODE_HOME, VK_CONTROL, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
