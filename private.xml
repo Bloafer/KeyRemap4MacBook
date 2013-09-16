@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <root>
  <item>
-    <name>Use PC Style Cut/Copy/Paste/Undo</name>
+    <name>Use PC Style Copy/Paste/Undo</name>
     <appendix>Correct Alt+Tab</appendix>
-    <appendix>(Control+C to Command_L+C)</appendix>
     <appendix>(Control+V to Command_L+V)</appendix>
     <appendix>(Control+X to Command_L+X)</appendix>
     <appendix>(Control+Z to Command_L+Z)</appendix>
@@ -23,7 +22,6 @@
     <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
     <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
     <!-- Fix control keys -->
-    <autogen>__KeyToKey__ KeyCode::C, VK_CONTROL, KeyCode::C, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::V, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::X, VK_CONTROL, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::Z, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
@@ -47,5 +45,12 @@
     <!-- § = \ -->
     <autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::BACKSLASH</autogen>
     <!-- | or \ to ~ or hash todo -->
+  </item>
+  <item>
+    <name>Control C fix</name>
+    <not>TERMINAL</not>
+    <appendix>(Control+C to Command_L+C)</appendix>
+    <identifier>remap.prefered_layout_c</identifier>
+    <autogen>__KeyToKey__ KeyCode::C, VK_CONTROL, KeyCode::C, ModifierFlag::COMMAND_L</autogen>
   </item>
 </root>
