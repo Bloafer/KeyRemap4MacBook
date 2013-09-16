@@ -16,6 +16,8 @@
     <appendix>(Control+A to Command_L+A)</appendix>
     <appendix>(Change Home to Control+A)</appendix>
     <appendix>(Change End to Control+E)</appendix>
+    <appendix>Swap @ and double-quote(")</appendix>
+    <appendix>Swap § and \</appendix>
     <identifier>remap.prefered_layout</identifier>
     <!-- Fix Alt_Tab -->
     <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
@@ -39,5 +41,11 @@
     <autogen>__KeyToKey__ FROMKEYCODE_END,  VK_CONTROL, KeyCode::CURSOR_DOWN,  ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ FROMKEYCODE_HOME,             KeyCode::A, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ FROMKEYCODE_END,              KeyCode::E, ModifierFlag::CONTROL_L</autogen>
+    <!-- fix " and @ -->
+    <autogen>__KeyToKey__ KeyCode::KEY_2, VK_SHIFT, KeyCode::QUOTE, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::QUOTE, VK_SHIFT, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+    <!-- § = \ -->
+    <autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::BACKSLASH</autogen>
+    <!-- | or \ to ~ or hash todo -->
   </item>
 </root>
