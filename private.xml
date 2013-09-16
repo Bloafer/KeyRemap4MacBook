@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root>
+ <item>
+    <name>Use PC Style Cut/Copy/Paste/Undo</name>
+    <appendix>Correct Alt+Tab</appendix>
+    <appendix>(Control+C to Command_L+C)</appendix>
+    <appendix>(Control+V to Command_L+V)</appendix>
+    <appendix>(Control+X to Command_L+X)</appendix>
+    <appendix>(Control+Z to Command_L+Z)</appendix>
+    <appendix>(Control+S to Command_L+S)</appendix>
+    <appendix>(Control+F to Command_L+F)</appendix>
+    <appendix>(Control+T to Command_L+T)</appendix>
+    <appendix>(Control+N to Command_L+N)</appendix>
+    <appendix>(Control+W to Command_L+W)</appendix>
+    <appendix>(Control+Q to Command_L+Q)</appendix>
+    <appendix>(Control+A to Command_L+A)</appendix>
+    <appendix>(Change Home to Control+A)</appendix>
+    <appendix>(Change End to Control+E)</appendix>
+    <identifier>remap.prefered_layout</identifier>
+    <!-- Fix Alt_Tab -->
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+    <!-- Fix control keys -->
+    <autogen>__KeyToKey__ KeyCode::C, VK_CONTROL, KeyCode::C, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, VK_CONTROL, KeyCode::V, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, VK_CONTROL, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, VK_CONTROL, KeyCode::S, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, VK_CONTROL, KeyCode::T, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, VK_CONTROL, KeyCode::N, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, VK_CONTROL, KeyCode::A, ModifierFlag::COMMAND_L</autogen>
+    <!-- Fix Home and End keys -->
+    <autogen>__KeyToKey__ FROMKEYCODE_HOME, VK_COMMAND, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ FROMKEYCODE_HOME, VK_CONTROL, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ FROMKEYCODE_END,  VK_COMMAND, KeyCode::CURSOR_DOWN,  ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ FROMKEYCODE_END,  VK_CONTROL, KeyCode::CURSOR_DOWN,  ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ FROMKEYCODE_HOME,             KeyCode::A, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ FROMKEYCODE_END,              KeyCode::E, ModifierFlag::CONTROL_L</autogen>
+  </item>
+</root>
